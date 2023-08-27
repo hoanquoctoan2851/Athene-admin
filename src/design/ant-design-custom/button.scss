@@ -1,0 +1,30 @@
+@import '../variable.scss';
+
+.ant-btn {
+  height: $height-button !important;
+  border-radius: 8px !important;
+  outline: none !important;
+  box-shadow: unset !important;
+  border: unset !important;
+  transition: all 0.5s !important;
+
+  &-primary {
+    background-color: $primary-color !important;
+    &:hover {
+      background-color: $primary-color-1 !important;
+    }
+  }
+
+  &-danger {
+    background-color: $red-color !important;
+    &:hover {
+      background-color: $red-color-2 !important;
+    }
+  }
+
+  &-ouline {
+    background-color: transparent !important;
+    border: 1px solid $primary-color !important;
+    color: $neutral-0 !important;
+  }
+}

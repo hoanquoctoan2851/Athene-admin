@@ -1,0 +1,36 @@
+@import '../variable.scss';
+.ant-popover-inner {
+  background-color: $gray-2 !important;
+  border-radius: 8px !important;
+  .ant-popover-message-title {
+    color: $neutral-0;
+    width: 70% !important;
+    padding-left: 6px !important;
+    margin-bottom: 16px !important;
+  }
+}
+.ant-popover-buttons {
+  display: flex;
+  flex-direction: row;
+  .ant-btn {
+    width: 100%;
+    height: $height-button;
+  }
+  .ant-btn-sm {
+    border: 1px solid $red-color !important;
+    color: $neutral-0;
+    background-color: $red-color;
+
+    &:hover {
+      color: $neutral-0;
+      opacity: 0.8;
+      background-color: $red-color;
+    }
+  }
+
+  .ant-btn-primary {
+    border-color: transparent !important;
+    color: $neutral-0;
+
+  }
+}

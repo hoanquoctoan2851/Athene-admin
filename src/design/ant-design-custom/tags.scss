@@ -1,0 +1,93 @@
+.ant-tag.ant-tag-has-color {
+  display: inline-flex;
+  padding: 8px 8px;
+  padding-right: 20px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  border-radius: 4px;
+  span:nth-child(2) {
+   font-weight: 300 !important;
+    font-size: 14px;
+  }
+}
+
+.tag-custom-success, .tag-custom-received, .tag-custom-enable {
+  span {
+    color: #A2FFBC;
+  }
+}
+
+.tag-custom-failed, .tag-custom-disable {
+  span {
+    color: #FFA2A2;
+  }
+}
+.tag-custom-send {
+  span {
+    color: #F8A2FF;
+  }
+}
+.tag-custom-convert {
+  span {
+    color: #8684FF;
+  }
+}
+.tag-custom-executing {
+  span {
+    color: #53ACFF;
+  }
+}
+.tag-custom-claimed {
+  span {
+    color: #FFCB11;
+  }
+}
+.tag-custom-pending {
+  span {
+    color: #CCCCCC;
+  }
+}
+
+.tag-custom-status-active {
+  span {
+    color: #53ACFF;
+  }
+}
+
+.tag-custom-status-inactive {
+  span {
+    color: #FF6666;
+  }
+}
+.tag-custom-admin {
+  span {
+    color: #D7C736;
+  }
+}
+.tag-custom-admin_view {
+  span {
+    color:
+            #CCCCCC;
+  }
+}
+.tag-custom-supper_admin {
+  span {
+    color: #FF7324;
+  }
+}
+
+.ant-tag.ant-tag-has-color.tag-custom-kyc-yes {
+  padding-right: 4px !important;
+  span {
+    color: #A2FFBC;
+  }
+}
+
+.ant-tag.ant-tag-has-color.tag-custom-kyc-no {
+  padding-right: 4px !important;
+  span {
+    color: #FF6666;
+  }
+}

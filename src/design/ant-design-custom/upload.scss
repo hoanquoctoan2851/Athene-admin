@@ -1,0 +1,8 @@
+@import '../variable.scss';
+.ant-upload.ant-upload-select-picture-card {
+  background-color: transparent !important;
+}
+
+.ant-upload.ant-upload-select-picture-card:hover {
+  border-color: $primary-color !important;
+}

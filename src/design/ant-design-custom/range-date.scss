@@ -1,0 +1,39 @@
+@import '../variable.scss';
+
+.ant-picker, .ant-picker-range {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  border-color: transparent !important;
+  border-radius: 8px !important;
+  box-shadow: unset !important;
+  outline: none !important;
+  height: $height-input;
+  padding-left: 24px !important;
+
+  .ant-picker-range-separator {
+    padding-right: 24px;
+  }
+  .ant-picker-suffix {
+    display: none !important;
+  }
+
+  .ant-picker-clear {
+    color: $neutral-0;
+    background: transparent !important;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  .ant-picker-active-bar  {
+    background-color: $primary-color !important;
+  }
+
+  .ant-picker-input {
+    input {
+      color: $neutral-0 !important;
+    &::placeholder {
+      color: $neutral-400;
+    }
+    }
+  }
+}

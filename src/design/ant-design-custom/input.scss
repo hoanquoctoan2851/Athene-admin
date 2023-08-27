@@ -1,0 +1,64 @@
+@import '../variable.scss';
+
+.ant-form {
+  .ant-form-item {
+    .ant-form-item-label {
+      label {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+        color: $neutral-400 !important;
+      }
+    }
+  }
+
+  .ant-form-item-explain {
+    margin-top: 6px !important;
+  }
+}
+
+.ant-input, .ant-input-password {
+  background-color: transparent !important;
+  height: $height-input;
+  border-radius: 8px !important;
+  color: $neutral-0 !important;
+  border-color: $neutral-600 !important;
+  outline: unset !important;
+  box-shadow: unset !important;
+  &::placeholder {
+    color: $neutral-600  !important;
+  }
+  &:hover {
+    border-color: $neutral-400 !important;
+  }
+  &:focus {
+    border-color: $gray-1 !important;
+  }
+
+  .anticon {
+    color: $neutral-500 !important;
+    font-size: 20px;
+  }
+}
+
+.ant-input-password {
+  .ant-input {
+    height: 100%;
+  }
+}
+
+.ant-input-affix-wrapper {
+  background-color: transparent !important;
+  height: $height-input;
+  border-radius: 8px !important;
+  color: $neutral-0 !important;
+  border-color: $neutral-600 !important;
+  outline: unset !important;
+  box-shadow: unset !important;
+  .ant-input {
+    height: 100%;
+    &::placeholder {
+      color: $neutral-400  !important;
+    }
+  }
+}

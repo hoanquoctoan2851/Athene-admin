@@ -1,0 +1,33 @@
+@import '../variable.scss';
+.ant-notification {
+  .ant-notification-custom {
+    border-radius: 8px !important;
+    .ant-notification-notice-message {
+      font-size: 16px;
+      text-transform: capitalize;
+      font-weight: 600;
+    }
+
+    .ant-notification-close-icon {
+      color: black;
+      font-weight: 700;
+    }
+  }
+  .notification-custom-success {
+    .ant-notification-notice-icon-success {
+      color: $color-notify-success;
+    }
+  }
+
+  .notification-custom-error {
+    .ant-notification-notice-icon-success {
+      color: $color-notify-error;
+    }
+  }
+
+  .notification-custom-warning {
+    .ant-notification-notice-icon-success {
+      color: $color-notify-warning;
+    }
+  }
+}

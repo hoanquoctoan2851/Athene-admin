@@ -1,0 +1,50 @@
+@import '../variable.scss';
+
+.ant-modal, .ant-modal-content {
+  border-radius: 16px !important;
+  overflow: hidden;
+}
+.ant-modal-content, .ant-modal-header {
+background-color: $bg-global !important;
+  border-bottom: unset !important;
+}
+
+.ant-modal-content {
+  .ant-modal-close-x {
+    .anticon  {
+      font-size: 24px;
+      color: $neutral-0;
+    }
+  }
+}
+
+.ant-modal-header {
+  padding: 48px 36px !important;
+  .ant-modal-title {
+    font-size: 44px;
+    line-height: 120%;
+    color: $neutral-0;
+  }
+}
+
+.ant-modal-body {
+  padding: 0 36px !important;
+  padding-bottom: 36px !important;
+}
+
+.ant-modal-footer {
+  display: none !important;
+}
+
+//modal-user-info
+
+.modal-user-info {
+  .ant-modal {
+    width: 100%;
+    max-width: 475px;
+  }
+  .ant-modal-content {
+    border-radius: 16px !important;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin - Athene</title>
+    <meta name="keyword" content="" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="app-loading">
+        <div class="app-loading-wrap">
+          <img
+            style="width: 400px"
+            src="/public/logo-full.png"
+            class="app-loading-logo"
+            alt="Logo"
+          />
+          <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style>
+      html {
+        background: #0c0f11 !important;
+      }
+
+      .app-loading {
+        background-color: #2c344a;
+      }
+
+      @media screen and (max-width: 1024px) {
+        .app-loading-logo {
+          max-width: 200px;
+        }
+      }
+
+      .app-loading {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #2c344a;
+      }
+
+      .app-loading .app-loading-wrap {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: flex;
+        transform: translate3d(-50%, -50%, 0);
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .app-loading .app-loading-title {
+        display: flex;
+        margin-top: 30px;
+        font-size: 30px;
+        color: rgb(0 0 0 / 85%);
+        justify-content: center;
+        align-items: center;
+      }
+
+      .app-loading .app-loading-logo {
+        display: block;
+        width: 90px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+      }
+
+      .lds-ellipsis {
+        display: inline-block;
+        position: relative;
+        width: 80px;
+        height: 80px;
+      }
+
+      .lds-ellipsis div {
+        position: absolute;
+        top: 33px;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background: #2b937a;
+        animation-timing-function: cubic-bezier(0, 1, 1, 0);
+      }
+
+      .lds-ellipsis div:nth-child(1) {
+        left: 8px;
+        animation: lds-ellipsis1 0.6s infinite;
+      }
+
+      .lds-ellipsis div:nth-child(2) {
+        left: 8px;
+        animation: lds-ellipsis2 0.6s infinite;
+      }
+
+      .lds-ellipsis div:nth-child(3) {
+        left: 32px;
+        animation: lds-ellipsis2 0.6s infinite;
+      }
+
+      .lds-ellipsis div:nth-child(4) {
+        left: 56px;
+        animation: lds-ellipsis3 0.6s infinite;
+      }
+
+      @keyframes lds-ellipsis1 {
+        0% {
+          transform: scale(0);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      @keyframes lds-ellipsis3 {
+        0% {
+          transform: scale(1);
+        }
+        100% {
+          transform: scale(0);
+        }
+      }
+
+      @keyframes lds-ellipsis2 {
+        0% {
+          transform: translate(0, 0);
+        }
+        100% {
+          transform: translate(24px, 0);
+        }
+      }
+    </style>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
